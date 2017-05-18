@@ -3,9 +3,9 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost
--- Tiempo de generación: 18-05-2017 a las 02:21:45
--- Versión del servidor: 5.5.24-log
--- Versión de PHP: 5.4.3
+-- Tiempo de generaciÃ³n: 18-05-2017 a las 02:21:45
+-- VersiÃ³n del servidor: 5.5.24-log
+-- VersiÃ³n de PHP: 5.4.3
 
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -25,10 +25,11 @@ SET time_zone = "+00:00";
 --
 -- Estructura de tabla para la tabla `alumno`
 --
-
+CREATE DATABASE horario; 
+USE horario;
 CREATE TABLE IF NOT EXISTS `alumno` (
   `NoControl` char(4) NOT NULL,
-  `Contraseña` char(6) NOT NULL,
+  `ContraseÃ±a` char(6) NOT NULL,
   `Nombre` varchar(50) NOT NULL,
   `Semestre` int(1) NOT NULL,
   `NoGrupos` int(1) DEFAULT NULL,
@@ -39,10 +40,10 @@ CREATE TABLE IF NOT EXISTS `alumno` (
 -- Volcado de datos para la tabla `alumno`
 --
 
-INSERT INTO `alumno` (`NoControl`, `Contraseña`, `Nombre`, `Semestre`, `NoGrupos`) VALUES
+INSERT INTO `alumno` (`NoControl`, `ContraseÃ±a`, `Nombre`, `Semestre`, `NoGrupos`) VALUES
 ('1001', '301195', 'JUAN ERNESTO PEREZ QUINTANO', 1, 0),
 ('1002', '569021', 'MIGUEL ANGEL PADILLA RAMIREZ', 2, 0),
-('1003', '109423', 'ELIZABETH NUÑEZ ANDRADE', 3, 0),
+('1003', '109423', 'ELIZABETH NUÃ‘EZ ANDRADE', 3, 0),
 ('1004', '408277', 'LUIS GOMEZ DURAN', 4, 0),
 ('1005', '901213', 'MARIA GUADALUPE HERNANDEZ TORRES', 1, 0),
 ('1006', '692516', 'ALEJANDRA SANCHEZ RODRIGUEZ', 2, 0),
@@ -174,7 +175,7 @@ INSERT INTO `grupo` (`Codigo`, `ClaveMat`, `Profesor`, `MaxAlumnos`, `NoAlumnos`
 ('LV15', 'A303', 'ING. ANA CECILIA LOPEZ LINARES', 20, 0),
 ('LV17', 'A305', 'ING. ELISA ENRIQUEZ ACEVEDO', 20, 0),
 ('LV18', 'A306', 'ING. RAFAEL PERALES ROCHA', 20, 0),
-('LV19', 'A401', 'ING. HECTOR JIMENEZ NUÑEZ', 20, 0),
+('LV19', 'A401', 'ING. HECTOR JIMENEZ NUÃ‘EZ', 20, 0),
 ('LV20', 'A402', 'ING. PATRICIA ROJAS TERRONES', 20, 0),
 ('LV22', 'A404', 'ING. CARLOS RAFAEL LEVY ROJAS', 20, 0),
 ('LV24', 'A406', 'ING. RAFAEL PERALES ROCHA', 20, 0),
@@ -190,7 +191,7 @@ INSERT INTO `grupo` (`Codigo`, `ClaveMat`, `Profesor`, `MaxAlumnos`, `NoAlumnos`
 ('MV01', 'A101', 'ING. LAURA RIVAS DOMINGUEZ', 20, 0),
 ('MV02', 'A102', 'ING. TORIBIO QUINTANO PORRAS', 20, 0),
 ('MV03', 'A103', 'ING. TORIBIO QUINTANO PORRAS', 20, 0),
-('MV07', 'A201', 'ING. HECTOR JIMENEZ NUÑEZ', 20, 0),
+('MV07', 'A201', 'ING. HECTOR JIMENEZ NUÃ‘EZ', 20, 0),
 ('MV08', 'A202', 'ING. FERNANDO NAVARRO DUARTE', 20, 0),
 ('MV09', 'A203', 'ING. XAVIER PRADO HUERTA', 20, 0),
 ('MV12', 'A206', 'ING. LAURA RIVAS DOMINGUEZ', 20, 0),
