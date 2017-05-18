@@ -25,7 +25,8 @@ SET time_zone = "+00:00";
 --
 -- Estructura de tabla para la tabla `alumno`
 --
-
+CREATE DATABASE horario; 
+USE horario;
 CREATE TABLE IF NOT EXISTS `alumno` (
   `NoControl` char(4) NOT NULL,
   `Contraseña` char(6) NOT NULL,
