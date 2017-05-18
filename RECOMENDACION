@@ -1,0 +1,3 @@
+Recomendacion: si a la hora de exportar el archivo .sql o .txt de la base e datos no llegase a funcionar, 
+es recomendable crear primero una base de datos vacia con el nombre de 'Horario' y ejecutar los archivos
+desde adentro de la base de datos.
